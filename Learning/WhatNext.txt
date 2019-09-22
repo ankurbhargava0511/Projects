@@ -1,0 +1,1 @@
+Build c# with code net core and vs code and dotnet commands
