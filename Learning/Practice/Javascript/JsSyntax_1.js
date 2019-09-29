@@ -85,3 +85,6 @@ values.splice(0,1)// start, number of element to remove
 console.log(values) //Array(2) [3,1]
 values.splice(0,2,44,55,66) // start, number of element to remove, ...rest of number to insert
 console.log(values) //Array(3) [44,55,66]
+
+
+
