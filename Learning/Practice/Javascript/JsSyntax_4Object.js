@@ -45,3 +45,40 @@ console.log(Number.parseFloat('55.98'), typeof(Number.parseFloat('55.98')));
 //this will skip characters 
 console.log(Number.parseInt('55ABC'), typeof(Number.parseInt('55ABC'))); //55
 console.log(Number.parseInt('ABC55ABC'), typeof(Number.parseInt('ABC55ABC'))); //NaN
+
+
+//Construction Function
+//declarations
+function Car(id){
+    this.carId=id, // properties
+    this.start=function() // method
+    {
+        console.log('start: ' + this.carId)
+    };
+}
+// create
+let c= new Car(456);
+c.start();
+//prototype
+//declarations
+function CarP(id){
+    this.carId=id // properties
+    
+}
+
+//Adding Prototype
+// Prottyping save memory by adding menthod directly to the prototype instead of function itself
+CarP.prototype.start=function() // method
+    {
+        console.log('start: ' + this.carId)
+    };
+
+// create
+let cP= new CarP(342);
+cP.start();
+
+//extands objects using prototype
+
+
+
+

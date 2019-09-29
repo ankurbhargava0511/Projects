@@ -140,3 +140,28 @@ myNumbers(...mystring);
 console.log(11111)
 
 
+//Foreach for Array
+
+let carIds= [
+    {carId:1, Name:"A"},
+    {carId:2, Name:"B"},
+    {carId:3, Name:"C"}
+];
+
+carIds.forEach(car=>console.log(car));
+carIds.forEach((car,index)=>console.log(car, index));
+
+
+//filter
+var result=carIds.filter(car=>car.carId===1);
+console.log(result, typeof(result));
+
+//every
+result=carIds.every(car=>car.carId>1); //is all element has this conditions
+console.log(result, typeof(result), "every");
+
+//finf
+result=carIds.find(car=>car.carId>1);
+console.log(result, typeof(result));
+
+
