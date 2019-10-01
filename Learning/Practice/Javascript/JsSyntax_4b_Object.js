@@ -77,10 +77,9 @@ CarP.prototype.start=function() // method
 let cP= new CarP(342);
 cP.start();
 
-//extands objects using prototype
 
 
-// 
+
 
 
 
