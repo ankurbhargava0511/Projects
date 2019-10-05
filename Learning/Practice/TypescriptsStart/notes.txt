@@ -1,0 +1,52 @@
+type script compiler is tsc
+
+npm install -g typescript //  restart OS
+
+C:\Users\LENOVO\AppData\Roaming\npm\tsserver -> C:\Users\LENOVO\AppData\Roaming\npm\node_modules\typescript\bin\tsserver
+C:\Users\LENOVO\AppData\Roaming\npm\tsc -> C:\Users\LENOVO\AppData\Roaming\npm\node_modules\typescript\bin\tsc
++ typescript@3.6.3
+updated 1 package in 1.868s
+
+tsc -- version
+
+mkdir TypescriptsStart
+code TypescriptsStart
+
+
+F:\Projects\Learning\Practice>
+
+create task.json
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "typescript",
+            "tsconfig": "tsconfig.json",
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+
+add a new file named tsconfig.json. Once in this file, IntelliSense (Ctrl+Space) will help you along the way.
+
+
+tsconfig.json IntelliSense
+
+A simple tsconfig.json looks like this for ES5, CommonJS modules and source maps:
+
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "outDir": "js",
+      "sourceMap": true
+    }
+  }
