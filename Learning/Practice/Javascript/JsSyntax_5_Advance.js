@@ -160,7 +160,7 @@ console.log(result, typeof(result));
 result=carIds.every(car=>car.carId>1); //is all element has this conditions
 console.log(result, typeof(result), "every");
 
-//finf
+//find
 result=carIds.find(car=>car.carId>1);
 console.log(result, typeof(result));
 
