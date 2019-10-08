@@ -436,5 +436,28 @@ namespace Company
 
 }
 
-
+// Tagging String Templates 
  
+const names = ['Alice', 'Bob', 'Charlie', 'Dana', 'Elvis', 'Fran', 'George', 'Hope'];
+const names2 = ['Isaac', 'Jane'];
+const names3 = [...names, "Kyle", ...names2];
+
+const firstTraditional = names[0];
+
+const [firstDestructure = 'Steve', secondDestructure, ...more] = names || [];
+
+multiGreet(...names);
+multiGreet();
+
+function multiGreet(...items: string[]) {
+  items.forEach(item => {
+    console.log(friend`Hello, ${item}.`); // Example
+  });
+}
+
+function friend(strings: string[], ...substitutions: string[]) {
+  if (!substitutions[0]) {
+    substitutions[0] = 'Friend';
+  }
+  return processTaggedTemplate(strings, substitutions);
+}
