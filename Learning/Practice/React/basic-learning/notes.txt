@@ -1,0 +1,4 @@
+//ReactDOM.render(<App />, document.getElementById('root'));
+
+Param 1 - react component 
+Param 2 - html object

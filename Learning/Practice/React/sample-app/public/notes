@@ -1,0 +1,11 @@
+react app has 
+public folder - where index.html is main file 
+it has public url and has title
+
+rest everything is copies in build folder
+src folder has index.js
+each folder can be refered directly with its index.js file
+
+npm create-react-app app-name 
+// appname is small letters
+
