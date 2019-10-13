@@ -9,3 +9,21 @@ code first-app
 //open terminal in VS code and run
 npm start
 //use Ctrl + C to close Ruuning app
+
+// project.json
+//Application details
+//dependency
+// scripts- npm stript
+//test scripts
+npm test or npm run test
+as no change use 'a' to run test
+
+//lint
+
+// index.html is starting point--> index.js--> App.js
+
+//install other items
+npm install react-router-dom bootstrap
+
+
+//Public folder contain static assests

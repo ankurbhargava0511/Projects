@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import HomePage from "./components/HomePageComponents/HomePage";
+import AboutPage from "./components/AboutPageComponents/AboutPage";
+import Header from "./components/CommonComponents/Header";
+
+// Old Way of routing
+// export default function App() {
+//   const route = window.location.pathname;
+//   if (route === "/about") return <AboutPage />;
+//   return <HomePage />;
+// }
+
+export default function App() {
+  function getPage() {
+    const route = window.location.pathname;
+    if (route === "/about") return <AboutPage />;
+    return <HomePage />;
+  }
+
+  // functions are refered with {} brackets and just name is required
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <Header />
+      {getPage()}
     </div>
   );
 }
-
-export default App;
