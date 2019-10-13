@@ -1,0 +1,11 @@
+// install Node
+// use create react app as boiler plate
+npx create-react-app first-app
+// test you first app
+cd first-app
+npm start
+//install VS code
+code first-app
+//open terminal in VS code and run
+npm start
+//use Ctrl + C to close Ruuning app
