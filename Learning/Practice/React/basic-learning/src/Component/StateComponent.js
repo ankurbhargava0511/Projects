@@ -1,42 +1,34 @@
-// import React from 'react';
-// import { thisExpression } from '@babel/types';
+import React from "react";
+//import { thisExpression } from '@babel/types';
+// state is mutable
+class ConstructorState extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { message: "This Is State via Contructure Method" };
+  }
+  render() {
+    return (
+      <div>
+        <p>{this.state.message}</p>
+      </div>
+    );
+  }
+  //   componentDidMount() {
+  //     this.setState({ message: "This Is State via Contructure Method" });
+  //   }
+}
+class PropertyState extends React.Component {
+  state = { message: "property State" };
+  render() {
+    return (
+      <div>
+        <p>{this.state.message}</p>
+      </div>
+    );
+  }
+  //   componentDidMount() {
+  //     this.setState({ message: "This Is State via property Method" });
+  //   }
+}
 
-// class ConstructState extends React.Component
-// {
-//     constructor(props)
-//     {
-//         super(props);
-//         this.state={message:"Constructor State"};
-//     }
-//     render(){
-//         return(
-            
-//             <div><p>"test"</p></div>
-//         )
-//     }
-//     componentDidMount()
-//     {
-//         this.setState(message= "test");
-//     }
-// }
-// class PropertyState extends React.Component
-// {
-    
-//     state={message:"property State"}
-    
-//     render(){
-       
-//         return(
-//             <div><p>{this.State.message}</p></div>
-//         )
-//         }
-//         else
-//         {
-//             <div><p>"no state"</p></div>
-//         }
-//     }
-    
-// }
-
-// export {ConstructState,PropertyState} 
-
+export { ConstructorState, PropertyState }; //,PropertyState}
