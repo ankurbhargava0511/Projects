@@ -1,0 +1,27 @@
+React
+npx create-react-app Name
+babel- transpiler
+prettier-
+WebPack- bundler
+ESLINT - 
+npm install flux react-router-dom bootstrap
+
+index.js- import "bootstrap/dist/css/bootstrap.min.css"
+
+
+mock setup evn + run multiple app + mock server
+npm install -D cross-env npm-run-all json-server
+-D stands for Dev Dependency
+
+React vs MVC
+React is mostly View
+
+React Use JSX
+
+flux
+-->Dispatchers
+-->action
+-->Store  -> Class extend EventEmitter
+
+
+
