@@ -1,0 +1,9 @@
+node
+npm
+Bable - Transpiler
+webpack
+eslint
+Jest
+prettier
+Bootstrap
+TS
